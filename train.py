@@ -42,7 +42,7 @@ with tf.Session() as sess:
     # save weights
     # c_test = sess.run(cost, feed_dict={X: a, Y: b, train_mode: False})
 
-    saver.save(sess, './model/unet.ckpt', global_step=global_step)
+    saver.save(sess, './ckpt/unet.ckpt', global_step=global_step)
     print(c)
     # test_patch_list = os.listdir('/workspace/seungho/Data/Test_patch/X')
     # for test_num in range(len(test_patch_list)):
